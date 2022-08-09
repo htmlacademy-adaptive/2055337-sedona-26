@@ -3,50 +3,51 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="../source/css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__wrapper">
+      <div class="container main-header__container">
         <a class="main-header__logo">
           <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седона">
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <div class="main-nav__container">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--current">
-                <a>
-                  Главная
-                </a>
-              </li>
-              <li class="site-list__item">
-                <a href="catalog.html">
-                  Фото и видео
-                </a>
-              </li>
-              <li class="site-list__item">
-                <a href="form.html">
-                  Форма Отзыва
-                </a>
-              </li>
-              <li class="site-list__item">
-                <a href="#">
-                  HTML Academy
-                </a>
-              </li>
-            </ul>
-          </div>
+            <li class="site-list__item site-list__item--current">
+              <a>
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">
+                Фото и видео
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">
+                Форма Отзыва
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
-    <main class="main-container">
-      <div class="main-welcome">
-        <h1 class="main-welcome__title">
-          <img class="main-welcome__img" src="img/welcom-main.svg" alt="welcome to gorgeous sedona" width="282" height="214">
-        </h1>
+    <main>
+      <div class="container">
+        <div class="main-welcome">
+          <h1 class="main-welcome__title">
+            <img class="main-welcome__img" src="img/welcom-main.svg" alt="welcome to gorgeous sedona" width="282" height="214">
+          </h1>
+        </div>
       </div>
       <section class="advantages">
-        <div class="advantages-wrapper">
+        <div class="advantages-wrapper wrapper">
           <h2 class="advantages__title-main">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
           <p class="advantages__description-main">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
           <ol class="advantages__list clear-list">
@@ -133,7 +134,7 @@
         </div>
       </section>
       <section class="search">
-        <div class="search-wrapper">
+        <div class="search-wrapper wrapper">
           <h2 class="search__title">Заинтересовались?</h2>
             <p class="search__description">
               Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
@@ -146,12 +147,12 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__wrapper">
+      <div class="main-footer__wrapper wrapper">
         <a class="main-footer__contacts contacts" href="#">
           <span class="contacts__text">#visitSEDONA</span>
         </a>
         <section class="main-footer__social social">
-          <div class="social-wrapper">
+          <div class="social-wrapper wrapper">
             <h3 class="visually-hidden">Социальные сети</h3>
             <ul class="social__list clear-list">
               <li class="social__item">

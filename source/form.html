@@ -1,98 +1,103 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Форма Отзыва</title>
+    <link href="../source/css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <div class="main-header__wrapper">
+      <div class="container main-header__container">
         <a class="main-header__logo">
           <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седона">
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <div class="main-nav__container">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a href="index.html">
-                  Главная
-                </a>
-              </li>
-              <li class="site-list__item">
-                <a href="catalog.html">
-                  Фото и видео
-                </a>
-              </li>
-              <li class="site-list__item site-list__item--current">
-                <a>
-                  Форма Отзыва
-                </a>
-              </li>
-              <li class="site-list__item">
-                <a href="#">
-                  HTML Academy
-                </a>
-              </li>
-            </ul>
-          </div>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">
+                Фото и видео
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--current">
+              <a>
+                Форма Отзыва
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
-    <main class="form-container">
-      <div class="welcome">
-        <h1 class="welcome__title">
-          <img class="welcome__img" src="img/welcom.svg" alt="welcome to gorgeous sedona" width="229" height="39">
-        </h1>
+    <main>
+      <div class="container">
+        <div class="welcome">
+          <h1 class="welcome__title">
+            <img class="welcome__img" src="img/welcom.svg" alt="welcome to gorgeous sedona" width="229" height="39">
+          </h1>
+        </div>
       </div>
       <section class="feedback">
-        <div class="feedback__container">
+        <div class="container feedback__container">
           <h2 class="feedback__title">Оставьте свой отзыв</h2>
           <p class="feedback__description">
             Помогите нашим отелям стать лучше!<br>оставьте отзыв о них, а также о<br>посещенных вами<br>достопримечательностях
           </p>
-          <div class="registry-wrapper">
-            <h2 class="feedback__title">Представьтесь:</h2>
-            <form class="feedback__form registry" action="https://echo.htmlacademy.ru/" method="post">
-              <p class="registry__name">
-                <label class="registry__label" for="registry_name">ИМЯ*:</label>
-                <input type="text" id="registry_name" name="registry_name" placeholder="Пётр">
-              </p>
-              <p class="registry__surname">
-                <label class="registry__label" for="registry__surname">ФАМИЛИЯ*:</label>
-                <input type="text" id="registry__surname" name="registry__surname" placeholder="Пустота">
-              </p>
-              <p class="registry__patronymic">
-                <label class="registry__label" for="registry__patronymic">Отчество:</label>
-                <input type="text" id="registry__patronymic" name="registry__patronymic" placeholder="Викторович">
-              </p>
-            </form>
-          </div>
-          <div class="contack-info__wrapper">
-            <h2 class="feedback__title">Контактная информация:</h2>
-            <form class="feedback__form contack-info" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="contack-info__label" for="contack-info__telephone">Контактный телефон*:</label>
-              <input
-                class="field"
-                placeholder="Введите телефон"
-                type="tel" name="contack-info__telephone"
-                id="contack-info__telephone"
-                required
-              >
-              <label class="contack-info__label" for="contack-info__email">Электронная почта*:</label>
-              <input
-                class="field"
-                placeholder="Введите e-mail"
-                type="email" name="contack-info__email"
-                id="contack-info__email"
-                required
-              >
-            </form>
-          </div>
-          <div class="impression__wrapper">
-            <form class="feedback__form impression" action="https://echo.htmlacademy.ru/" method="post">
-              <fieldset class="impression__fieldset">
-                <legend class="impression__title">Ваше Общее впечатление:</legend>
+          <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="registry-wrapper wrapper">
+              <h2 class="feedback__title">Представьтесь:</h2>
+              <fieldset class="feedback__fieldset registry">
+                <p class="registry__name">
+                  <label class="registry__label" for="registry_name">Имя*:</label>
+                  <input type="text" id="registry_name" name="registry_name" placeholder="Пётр">
+                </p>
+                <p class="registry__surname">
+                  <label class="registry__label" for="registry__surname">Фамилия*:</label>
+                  <input type="text" id="registry__surname" name="registry__surname" placeholder="Пустота">
+                </p>
+                <p class="registry__patronymic">
+                  <label class="registry__label" for="registry__patronymic">Отчество:</label>
+                  <input type="text" id="registry__patronymic" name="registry__patronymic" placeholder="Викторович">
+                </p>
+              </fieldset>
+            </div>
+            <div class="contack-wrapper wrapper">
+              <h2 class="feedback__title">Контактная информация:</h2>
+              <fieldset class="feedback__fieldset contack">
+                <div class="telephone-wrapper wrapper">
+                  <label class="contack__label" for="contack__telephone">Контактный телефон*:</label>
+                  <input
+                    class="field"
+                    placeholder="Введите телефон"
+                    type="tel" name="contack__telephone"
+                    id="contack__telephone"
+                    required
+                  >
+                </div>
+                <div class="email-wrapper wrapper">
+                  <label class="contack__label" for="contack__email">Электронная почта*:</label>
+                  <input
+                    class="field"
+                    placeholder="Введите e-mail"
+                    type="email" name="contack__email"
+                    id="contack__email"
+                    required
+                  >
+                </div>
+              </fieldset>
+            </div>
+            <div class="impression-wrapper wrapper">
+              <fieldset class="feedback__fieldset impression">
+                <legend class="impression__title">Ваше общее впечатление:</legend>
                 <ul class="impression__list clear-list">
                   <li class="impression__item">
                     <label class="impression__control" for="type-one">
@@ -117,12 +122,10 @@
                   </li>
                 </ul>
               </fieldset>
-            </form>
-          </div>
-          <div class="places-wrapper">
-            <form class="feedback__form places" action="https://echo.htmlacademy.ru/" method="post">
-              <fieldset class="places__fieldset">
-                <legend class="places__title">посещенные достопримечательности:</legend>
+            </div>
+            <div class="places-wrapper wrapper">
+              <fieldset class="feedback__fieldset places">
+                <legend class="places__title">Посещенные достопримечательности:</legend>
                 <ul class="places__list clear-list">
                   <li class="places__item">
                     <label class="places__control">
@@ -154,28 +157,26 @@
                   </li>
                 </ul>
               </fieldset>
-            </form>
-          </div>
-          <div class="text-descriptions__wrapper">
-            <h2 class="feedback__title">Опишите свои эмоции:</h2>
-            <form class="feedback__form text-descriptions" action="https://echo.htmlacademy.ru/" method="post">
-              <textarea name="comment" id="comment-field" rows="10">Опишите подробно все свои восторги</textarea>
-            </form>
-          </div>
-          <button class="feedback__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
-          <small class="feedback__legend">
-            * — обязательные поля
-          </small>
+            </div>
+            <div class="feedback__textarea">
+              <h2 class="feedback__title">Опишите свои эмоции:</h2>
+                <textarea name="comment" id="comment-field" rows="10">Опишите подробно все свои восторги</textarea>
+            </div>
+            <button class="feedback__button button" type="submit">отправить отзыв</button>
+            <small class="feedback__legend">
+              * — обязательные поля
+            </small>
+          </form>
         </div>
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__wrapper">
+      <div class="main-footer__wrapper wrapper">
         <a class="main-footer__contacts contacts" href="#">
           <span class="contacts__text">#visitSEDONA</span>
         </a>
         <section class="main-footer__social social">
-          <div class="social-wrapper">
+          <div class="social-wrapper wrapper">
             <h3 class="visually-hidden">Социальные сети</h3>
             <ul class="social__list clear-list">
               <li class="social__item">
