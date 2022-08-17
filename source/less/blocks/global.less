@@ -1,41 +1,14 @@
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/ptsans.woff") format("woff");
-  font-display: swap;
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/ptsans.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans Bold";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/ptsansbold.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans Bold";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/ptsansbold.woff2") format("woff2");
-  font-display: swap;
-}
-
-.page__body {
+body {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
   margin: 0;
   font-size: 18px;
   line-height: 26px;
@@ -46,9 +19,6 @@
 .container {
   margin: 0 auto;
   width: 320px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
 }
 
 .button {

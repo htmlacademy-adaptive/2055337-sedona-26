@@ -2,39 +2,51 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Форма Отзыва</title>
-    <link href="../source/css/style.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="main-header">
       <div class="container main-header__container">
-        <a class="main-header__logo">
-          <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седона">
-        </a>
+        <div class="main-header__wrapper">
+          <a class="main-header__logo">
+            <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седона">
+          </a>
+          <button class="button main-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <svg class="main-header__icon" width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
+              <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
+              <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
+            </svg>
+          </button>
+        </div>
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html">
-                Фото и видео
-              </a>
-            </li>
-            <li class="site-list__item site-list__item--current">
-              <a>
-                Форма Отзыва
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">
-                HTML Academy
-              </a>
-            </li>
-          </ul>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list clear-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="site-list__item ">
+                <a class="site-list__link" href="catalog.html">
+                  Фото и видео
+                </a>
+              </li>
+              <li class="site-list__item site-list__item--current">
+                <a class="site-list__link" href="#">
+                  Форма Отзыва
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">
+                  HTML Academy
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -48,74 +60,98 @@
       </div>
       <section class="feedback">
         <div class="container feedback__container">
-          <h2 class="feedback__title">Оставьте свой отзыв</h2>
+          <h2 class="feedback__title-main">Оставьте свой отзыв</h2>
           <p class="feedback__description">
             Помогите нашим отелям стать лучше!<br>оставьте отзыв о них, а также о<br>посещенных вами<br>достопримечательностях
           </p>
           <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="registry-wrapper wrapper">
+            <div class="registry-container container">
               <h2 class="feedback__title">Представьтесь:</h2>
               <fieldset class="feedback__fieldset registry">
-                <p class="registry__name">
-                  <label class="registry__label" for="registry_name">Имя*:</label>
-                  <input type="text" id="registry_name" name="registry_name" placeholder="Пётр">
-                </p>
-                <p class="registry__surname">
-                  <label class="registry__label" for="registry__surname">Фамилия*:</label>
-                  <input type="text" id="registry__surname" name="registry__surname" placeholder="Пустота">
-                </p>
-                <p class="registry__patronymic">
-                  <label class="registry__label" for="registry__patronymic">Отчество:</label>
-                  <input type="text" id="registry__patronymic" name="registry__patronymic" placeholder="Викторович">
-                </p>
+                <div class="registry__wrapper wrapper">
+                  <p class="registry__name">
+                    <label class="registry__label" for="registry__name">Имя*:</label>
+                    <input class="registry__input" type="text" id="registry__name" name="registry__name" placeholder="Пётр">
+                  </p>
+                </div>
+                <div class="registry__wrapper wrapper">
+                  <p class="registry__surname">
+                    <label class="registry__label" for="registry__surname">Фамилия*:</label>
+                    <input
+                      class="registry__input"
+                      type="text"
+                      id="registry__surname"
+                      name="registry__surname"
+                      placeholder="Пустота"
+                    >
+                  </p>
+                </div>
+                <div class="registry__wrapper wrapper">
+                  <p class="registry__patronymic">
+                    <label class="registry__label" for="registry__patronymic">Отчество:</label>
+                    <input
+                      class="registry__input"
+                      type="text"
+                      id="registry__patronymic"
+                      name="registry__patronymic"
+                      placeholder="Викторович"
+                    >
+                  </p>
+                </div>
               </fieldset>
             </div>
-            <div class="contack-wrapper wrapper">
+            <div class="contack-container container">
               <h2 class="feedback__title">Контактная информация:</h2>
               <fieldset class="feedback__fieldset contack">
-                <div class="telephone-wrapper wrapper">
+                <div class="contack-wrapper wrapper">
                   <label class="contack__label" for="contack__telephone">Контактный телефон*:</label>
-                  <input
-                    class="field"
-                    placeholder="Введите телефон"
-                    type="tel" name="contack__telephone"
-                    id="contack__telephone"
-                    required
-                  >
+                  <div class="telephone-wrapper">
+                    <input
+                      class="contack__input"
+                      placeholder="Введите телефон"
+                      type="tel" name="contack__telephone"
+                      id="contack__telephone"
+                      required
+                    >
+                    <button class="contack__button"></button>
+                  </div>
                 </div>
-                <div class="email-wrapper wrapper">
+                <div class="contack-wrapper wrapper">
                   <label class="contack__label" for="contack__email">Электронная почта*:</label>
-                  <input
-                    class="field"
-                    placeholder="Введите e-mail"
-                    type="email" name="contack__email"
-                    id="contack__email"
-                    required
-                  >
+                  <div class="email-wrapper">
+                    <input
+                      class="contack__input"
+                      placeholder="Введите e-mail"
+                      type="email" name="contack__email"
+                      id="contack__email"
+                      required
+                    >
+                    <button class="contack__button"></button>
+                  </div>
                 </div>
               </fieldset>
             </div>
             <div class="impression-wrapper wrapper">
               <fieldset class="feedback__fieldset impression">
-                <legend class="impression__title">Ваше общее впечатление:</legend>
+                <legend class="feedback__title">Ваше общее впечатление:</legend>
                 <ul class="impression__list clear-list">
                   <li class="impression__item">
                     <label class="impression__control" for="type-one">
-                      <input class="impression__control-input" type="radio" name="impression" id="type-one" value="positive" checked>
+                      <input class="impression__control-input visually-hidden" type="radio" name="impression" id="type-one" value="positive" checked>
                       <span class="impression__control-mark"></span>
                       <span class="impression__control-label">Скорее положительное</span>
                     </label>
                   </li>
                   <li class="impression__item">
                     <label class="impression__control" for="type-two">
-                      <input class="impression__control-input" type="radio" name="impression" id="type-two" value="negative">
+                      <input class="impression__control-input visually-hidden" type="radio" name="impression" id="type-two" value="negative">
                       <span class="impression__control-mark"></span>
                       <span class="impression__control-label">Скорее отрицательное</span>
                     </label>
                   </li>
                   <li class="impression__item">
                     <label class="control" for="type-three">
-                      <input class="impression__control-input" type="radio" name="impression" id="type-three" value="difficult">
+                      <input class="impression__control-input visually-hidden" type="radio" name="impression" id="type-three" value="difficult">
                       <span class="impression__control-mark"></span>
                       <span class="impression__control-label">Затрудняюсь ответить</span>
                     </label>
@@ -125,32 +161,32 @@
             </div>
             <div class="places-wrapper wrapper">
               <fieldset class="feedback__fieldset places">
-                <legend class="places__title">Посещенные достопримечательности:</legend>
+                <legend class="feedback__title">Посещенные достопримечательности:</legend>
                 <ul class="places__list clear-list">
                   <li class="places__item">
                     <label class="places__control">
-                      <input class="places__control-input" type="checkbox" name="places" value="bridge" checked>
+                      <input class="places__control-input visually-hidden" type="checkbox" name="places" value="bridge" checked>
                       <span class="places__control-checkmark"></span>
                       <span class="places__control-label">Мост Дьявола</span>
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="places__control">
-                      <input class="places__control-input" type="checkbox" name="places" value="mountain" checked>
+                      <input class="places__control-input visually-hidden" type="checkbox" name="places" value="mountain" checked>
                       <span class="places__control-checkmark"></span>
                       <span class="places__control-label">Гора-Колокол</span>
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="places__control">
-                      <input class="places__control-input" type="checkbox" name="places" value="park" checked>
+                      <input class="places__control-input visually-hidden" type="checkbox" name="places" value="park" checked>
                       <span class="places__control-checkmark"></span>
                       <span class="places__control-label">Слайд-парк</span>
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="places__control">
-                      <input class="places__control-input" type="checkbox" name="places" value="rocks">
+                      <input class="places__control-input visually-hidden" type="checkbox" name="places" value="rocks">
                       <span class="places__control-checkmark"></span>
                       <span class="places__control-label">Красные скалы</span>
                     </label>
@@ -160,18 +196,20 @@
             </div>
             <div class="feedback__textarea">
               <h2 class="feedback__title">Опишите свои эмоции:</h2>
-                <textarea name="comment" id="comment-field" rows="10">Опишите подробно все свои восторги</textarea>
+                <textarea class="feedback__text" name="comment" id="comment-field" rows="9">Опишите подробно все свои восторги</textarea>
             </div>
-            <button class="feedback__button button" type="submit">отправить отзыв</button>
-            <small class="feedback__legend">
-              * — обязательные поля
-            </small>
+            <div class="legend-wrapper">
+              <button class="feedback__button button" type="submit">отправить отзыв</button>
+              <small class="feedback__legend">
+                * — обязательные поля
+              </small>
+            </div>
           </form>
         </div>
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__wrapper wrapper">
+      <div class="main-footer__container container">
         <a class="main-footer__contacts contacts" href="#">
           <span class="contacts__text">#visitSEDONA</span>
         </a>
@@ -180,17 +218,17 @@
             <h3 class="visually-hidden">Социальные сети</h3>
             <ul class="social__list clear-list">
               <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <a class="social__link button social__link--vkontakte" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">ВКонтакте</span>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <a class="social__link button social__link--telegram" href="https://t.me/htmlacademy">
                   <span class="visually-hidden">Телеграм</span>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <a class="social__link button social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
                   <span class="visually-hidden">Ютуб</span>
                 </a>
               </li>
@@ -198,7 +236,7 @@
           </div>
         </section>
         <div class="main-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
+          <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Academy</span>
           </a>
