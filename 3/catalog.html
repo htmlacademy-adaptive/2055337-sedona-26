@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTML Academy: Седона</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <base href="https://htmlacademy-adaptive.github.io/2055337-sedona-26/3/">
+</head>
+  <body class="page__body">
+    <header class="main-header">
+      <div class="container main-header__container">
+        <div class="main-header__wrapper">
+          <a class="main-header__logo">
+            <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седона">
+          </a>
+          <button class="button main-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <svg class="main-header__icon" width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
+              <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
+              <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
+            </svg>
+          </button>
+        </div>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list clear-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="site-list__item site-list__item--current">
+                <a class="site-list__link" href="#">
+                  Фото и видео
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">
+                  Форма Отзыва
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">
+                  HTML Academy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="welcome">
+          <h1 class="welcome__title">
+            <img class="welcome__img" src="img/welcom.svg" alt="welcome to gorgeous sedona" width="229" height="39">
+          </h1>
+        </div>
+      </div>
+      <section class="content-catalog">
+        <div class="container content-catalog__container">
+          <h2 class="content-catalog__title">Фото и видео</h2>
+          <p class="content-catalog__description">Не можете решиться на путешествие<br> из-за курса? Фотографии помогут вам<br> забыть о политике и экономике.</p>
+          <div class="foto-wrapper wrapper">
+            <ul class="content-catalog__list clear-list">
+              <li class="content-catalog__item">
+                <div class="content-catalog__fotos fotos">
+                  <img class="fotos__img" src="img/expanse-mobile.jpg" alt="фото дороги">
+                  <h3 class="fotos__title">неродные просторы</h3>
+                  <p class="fotos__author">Автор фото: Борис</p>
+                  <button class="fotos__button" type="button">
+                    <span class="fotos__liked visually-hidden">понравилось:</span>
+                    <span class="fotos__liked-number">1350</span>
+                  </button>
+                </div>
+              </li>
+              <li class="content-catalog__item">
+                <div class="content-catalog__fotos fotos">
+                  <img class="fotos__img" src="img/vegetation-mobile.jpg" alt="фото растения">
+                  <h3 class="fotos__title">Местная растительность</h3>
+                  <p class="fotos__author">Автор фото: Сергей</p>
+                  <button class="fotos__button" type="button">
+                    <span class="fotos__liked visually-hidden">понравилось:</span>
+                    <span class="fotos__liked-number">143</span>
+                  </button>
+                </div>
+              </li>
+              <li class="content-catalog__item">
+                <div class="content-catalog__fotos fotos">
+                  <img class="fotos__img" src="img/road-mobile.jpg" alt="фото горы">
+                  <h3 class="fotos__title">Дорога на север</h3>
+                  <p class="fotos__author">Автор фото: Петр</p>
+                  <button class="fotos__button" type="button">
+                    <span class="fotos__liked visually-hidden">понравилось:</span>
+                    <span class="fotos__liked-number">96</span>
+                  </button>
+                </div>
+              </li>
+              <li class="content-catalog__item">
+                <div class="content-catalog__fotos fotos">
+                  <img class="fotos__img" src="img/bridge-mobile.jpg" alt="фото каньона">
+                  <h3 class="fotos__title">Мост дьявола</h3>
+                  <p class="fotos__author">Автор фото: Антон</p>
+                  <button class="fotos__button" type="button">
+                    <span class="fotos__liked visually-hidden">понравилось:</span>
+                    <span class="fotos__liked-number">254</span>
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="content-catalog__video video">
+            <h2 class="content-catalog__title">Все еще сомневаетесь?</h2>
+            <p class="content-catalog__description">Смотрите видеопрезентацию и<br> скорее за билетами, пока они не<br> подорожали в очередной раз!</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__container container">
+        <a class="main-footer__contacts contacts" href="#">
+          <span class="contacts__text">#visitSEDONA</span>
+        </a>
+        <section class="main-footer__social social">
+          <div class="social-wrapper wrapper">
+            <h3 class="visually-hidden">Социальные сети</h3>
+            <ul class="social__list clear-list">
+              <li class="social__item">
+                <a class="social__link button social__link--vkontakte" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">ВКонтакте</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link button social__link--telegram" href="https://t.me/htmlacademy">
+                  <span class="visually-hidden">Телеграм</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link button social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                  <span class="visually-hidden">Ютуб</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <div class="main-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
