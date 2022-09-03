@@ -1,22 +1,102 @@
 .sublist {
   padding-left: 65px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .sublist__title {
   font-size: 18px;
   margin: 0;
   padding-top: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    padding-top: 158px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.sublist__description {
+  margin: 0;
+  text-transform: uppercase;
+  padding-top: 16px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 59px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.sublist__housing {
+  width: 225px;
+
+  @media (min-width: @tablet-width) {
+    width: 185px;
+    margin: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 282px;
+  }
+}
+
+.sublist__eating {
+  width: 232px;
+
+  @media (min-width: @tablet-width) {
+    width: 180px;
+    margin: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 313px;
+  }
+}
+
+.sublist__souvenir {
+  width: 202px;
+
+  @media (min-width: @tablet-width) {
+    width: 193px;
+    margin: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 244px;
+  }
+}
+
+.sublist__item {
+
+  @media (min-width: @tablet-width) {
+    width: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
 }
 
 .sublist__wrapper {
   margin-bottom: 52px;
   padding-top: 1px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
-.sublist__description {
-  margin: 0;
-  padding-top: 16px;
-  font-size: 14px;
-  line-height: 21px;
-  color: #333333;
+.sublist__list {
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }

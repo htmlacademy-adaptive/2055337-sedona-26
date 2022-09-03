@@ -1,7 +1,16 @@
 .places__control-label {
   display: block;
   font-weight: 700;
-  padding-bottom: 36px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 16px;
+  padding-left: 62px;
+  margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 224px;
+    margin-left: 0;
+  }
 }
 
 .places__title {
@@ -13,6 +22,13 @@
   text-transform: uppercase;
   padding-top: 24px;
   padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 48px;
+    font-size: 21px;
+    padding-bottom: 28px;
+    width: 308px;
+  }
 }
 
 .places__fieldset {
@@ -24,4 +40,24 @@
 .places-container {
   border-bottom: solid 1px;
   border-color: rgba(229, 229, 229, 1);
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+}
+
+
+.places__list {
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 480px;
+    margin: auto;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+  }
 }

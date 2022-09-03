@@ -5,10 +5,15 @@
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    padding-bottom: 27px;
+  }
 }
 
 .content-catalog__description {
-  margin: 0;
+  margin: auto;
   padding-bottom: 24px;
   font-weight: 400;
   font-size: 14px;
@@ -16,9 +21,20 @@
   text-align: center;
   text-transform: uppercase;
   color: rgba(51, 51, 51, 1);
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 458px;
+    margin: auto;
+    padding-bottom: 67px;
+  }
 }
 
 .content-catalog__container {
   border-bottom: 1px solid;
   border-color: rgba(229, 229, 229, 1);
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 }

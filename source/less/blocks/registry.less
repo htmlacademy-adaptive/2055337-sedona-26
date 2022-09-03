@@ -14,9 +14,14 @@
   width: 280px;
   height: 58px;
   margin-left: 20px;
+  padding: 0;
   padding-left: 16px;
   font-size: 18px;
-  color: rgba(0, 0, 0, 1);
+  font-weight: 700;
+
+  @media (min-width: @desktop-width) {
+    width: 430px;
+  }
 }
 
 .registry {
@@ -26,27 +31,34 @@
   padding: 0;
 }
 
-.registry__name {
+.registry__field {
   margin: 0;
 }
 
-.registry__surname {
-  margin: 0;
-}
-
-.registry__patronymic {
-  margin: 0;
-}
-
-.registry-container {
+.registry-wrapper {
   border-top: solid 1px;
   border-color: rgba(229, 229, 229, 1);
   border-bottom: solid 1px;
   border-color: rgba(229, 229, 229, 1);
   padding-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    border-top: none;
+    border-bottom: none;
+    border-right: solid 1px;
+    border-color: rgba(229, 229, 229, 1);
+    padding: 0;
+    padding-right: 43px;
+    margin-left: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 100px;
+    padding-right: 63px;
+  }
 }
 
-.registry__wrapper {
+.registry__field {
   display: flex;
   flex-direction: column;
   padding-bottom: 16px;
@@ -61,6 +73,12 @@
   text-transform: uppercase;
   padding-top: 24px;
   padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-bottom: 28px;
+    font-size: 21px;
+  }
 }
 
 .registry__fieldset {

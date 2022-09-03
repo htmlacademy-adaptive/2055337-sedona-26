@@ -1,4 +1,5 @@
 .contacts-footer__text {
+  font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
@@ -9,8 +10,22 @@
   text-align: center;
   color: #000000;
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    min-width: 166px;
+  }
 }
 
-.contacts-footer__container {
+.contacts-footer__wrapper {
   padding-top: 39px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 49px;
+    padding-bottom: 46px;
+    padding-left: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 104px;
+  }
 }
