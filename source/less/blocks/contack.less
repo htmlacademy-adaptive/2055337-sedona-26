@@ -3,11 +3,16 @@
   width: 222px;
   height: 58px;
   margin-left: 20px;
+  padding: 0;
   padding-left: 16px;
   border: 0;
   font-size: 18px;
   line-height: 26px;
-  color: rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+
+  @media (min-width: @desktop-width) {
+    width: 344px;
+  }
 }
 
 .contack__button {
@@ -27,11 +32,6 @@
   text-transform: uppercase;
 }
 
-.contack-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
 .contack__title {
   margin: 0;
   font-weight: 700;
@@ -41,15 +41,32 @@
   text-transform: uppercase;
   padding-top: 24px;
   padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-bottom: 28px;
+    font-size: 21px;
+  }
 }
 
 .contack__fieldset {
   border: 0;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-.contack-container {
+.contack-wrapper {
   border-bottom: solid 1px;
   border-color: rgba(229, 229, 229, 1);
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    margin-left: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 44px;
+  }
 }

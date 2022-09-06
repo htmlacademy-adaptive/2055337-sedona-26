@@ -1,10 +1,19 @@
 .main-welcome {
-  background-image: url("../img/diliver.svg"), url("../img/background-welcome-main.jpg");
+  background-image: url("../img/diliver.svg"), url("../img/background-welcome-main-desktop.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, top;
   background-color: #000000;
   width: 320px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/diliver-desktop.svg"), url("../img/background-welcome-main-desktop.jpg");
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
 .main-welcome__img {
@@ -12,6 +21,20 @@
   margin-right: 19px;
   margin-top: 90px;
   margin-bottom: 85px;
+
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
+    margin-left: 153px;
+    margin-right: 154px;
+    margin-top: 77px;
+    margin-bottom: 91px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 370px;
+    margin-right: 370px;
+  }
 }
 
 .main-welcome__title {

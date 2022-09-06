@@ -12,6 +12,18 @@
   padding-right: 16px;
   border: 0;
   margin-bottom: 56px;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    margin-left: 60px;
+    height: 160px;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 768px;
+    margin-left: 216px;
+  }
 }
 
 .textarea__title {
@@ -23,4 +35,10 @@
   text-transform: uppercase;
   padding-top: 24px;
   padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+   font-size: 21px;
+  padding-top: 42px;
+  padding-bottom: 28px;
+  }
 }

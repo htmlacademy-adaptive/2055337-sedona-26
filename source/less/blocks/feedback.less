@@ -6,16 +6,29 @@
   text-align: center;
   text-transform: uppercase;
   padding-top: 36px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 64px;
+    font-size: 30px;
+  }
 }
+
 
 .feedback__description {
   font-size: 14px;
   line-height: 21px;
-  margin: 0;
+  margin: auto;
   text-align: center;
   text-transform: uppercase;
   padding-top: 24px;
   padding-bottom: 28px;
+  width: 306px;
+
+  @media (min-width: @tablet-width) {
+    width: 435px;
+    line-height: 24px;
+    padding-bottom: 104px;
+  }
 }
 
 .feedback__fieldset {
@@ -31,4 +44,11 @@
 .feedback {
   display: flex;
   flex-direction: column;
+}
+
+.feedback__entry-wrapper {
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }

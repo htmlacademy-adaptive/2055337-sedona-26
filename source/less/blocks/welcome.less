@@ -5,12 +5,35 @@
   background-color: #000000;
   width: 320px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/diliver.svg"), url("../img/background-welcome-desktop.jpg");
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
 .welcome__img {
   margin-left: 46px;
   margin-top: 52px;
   margin-bottom: 67px;
+
+  @media (min-width: @tablet-width) {
+    width: 457px;
+    height: 78px;
+    margin-right: 155px;
+    margin-left: 156px;
+    margin-top: 95px;
+    margin-bottom: 117px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 369px;
+    margin-left: 371px;
+  }
 }
 
 .welcome__title {
