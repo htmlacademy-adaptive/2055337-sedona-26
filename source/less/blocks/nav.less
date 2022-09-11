@@ -1,1 +1,88 @@
+.nav__toggle {
+  position: absolute;
+  top: 17px;
+  right: 21px;
+  z-index: 2;
+  display: block;
+  width: 23px;
+  height: 22px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: none;
 
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+ .nav {
+  position: relative;
+ }
+
+ .nav--closed .nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 4px;
+  background-color: #81B3D2;
+  box-shadow: 0 9px 0 0 #81B3D2, 0 18px 0 0 #81B3D2;
+}
+
+
+
+.nav--closed .nav__toggle:active::before {
+  background-color: fade(#81B3D2, 30%);
+  box-shadow:
+    0 8px 0 0 fade(#81B3D2, 30%),
+    0 16px 0 0 fade(#81B3D2, 30%);
+}
+
+.nav--opened .nav__toggle {
+  top: 17px;
+  right:20px;
+  background-color: #81B3D2;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 22px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  .nav--nojs .nav__toggle {
+    display: none;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .nav--closed .site-list__item {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  .nav--closed .site-list__item {
+    display: none;
+  }
+}

@@ -214,7 +214,7 @@
   display: flex;
   justify-content: center;
   background-color: #EEEEEE;
-  padding-top: 26px;
+  padding-top: 2px;
   padding-bottom: 2px;
 
   @media (min-width: @tablet-width) {
@@ -226,8 +226,19 @@
 
 .advantages__list-grey {
 
+
   @media (min-width: @tablet-width) {
     display: flex;
+  }
+}
+
+.advantages__item-grey:nth-child(2) {
+  border-bottom: solid 1px;
+  border-top: solid 1px;
+  border-color: #D6D6D6;
+
+  @media (min-width: @tablet-width) {
+    border: none;
   }
 }
 
@@ -236,9 +247,11 @@
   font-size: inherit;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 24px;
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
+    padding-top: 0;
   }
 }
 

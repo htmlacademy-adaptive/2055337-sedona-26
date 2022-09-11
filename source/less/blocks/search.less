@@ -30,15 +30,28 @@
   }
 }
 
+.search__button:hover {
+  background: #669EC0;
+}
+
+.search__button:active {
+  background: #5496BD;
+}
+
 .search__button {
   display: block;
   margin: auto;
   width: 284px;
   padding-top: 16px;
   padding-bottom: 16px;
+  margin-bottom: 49px;
 
   @media (min-width: @tablet-width) {
     width: 458px;
     margin-bottom: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 66px;
   }
 }

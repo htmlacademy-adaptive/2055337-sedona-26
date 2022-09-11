@@ -95,8 +95,63 @@
 }
 
 .sublist__list {
+  position: relative;
 
   @media (min-width: @tablet-width) {
     display: flex;
+  }
+}
+
+.sublist__icon-housing {
+  position: absolute;
+  right: 270px;
+  bottom: 300px;
+
+  @media (min-width: @tablet-width) {
+    width: 75px;
+    height: 72px;
+    right: 603px;
+    bottom: 198px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 964px;
+    bottom: 198px;
+  }
+}
+
+.sublist__icon-eating {
+  position: absolute;
+  right: 270px;
+  bottom: 160px;
+
+  @media (min-width: @tablet-width) {
+    width: 76px;
+    height: 68px;
+    right: 347px;
+    bottom: 198px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 562px;
+    bottom: 198px;
+  }
+}
+
+.sublist__icon-souvenir {
+  position: absolute;
+  right: 270px;
+  bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    width: 64px;
+    height: 75px;
+    right: 97px;
+    bottom: 198px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 170px;
+    bottom: 198px;
   }
 }
