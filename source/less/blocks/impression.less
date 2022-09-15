@@ -45,6 +45,35 @@
   }
 }
 
+.impression__control-mark {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #F2F2F2;
+  margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
+.impression__control-input[type="radio"]:checked + .impression__control-mark::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background: #333333;
+  border-radius: 50%;
+  //box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  content: "";
+}
+
 .impression__list {
 
   @media (min-width: @tablet-width) {

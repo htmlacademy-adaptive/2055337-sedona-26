@@ -6,6 +6,7 @@
   margin-bottom: 16px;
   padding-left: 62px;
   margin-left: 20px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 224px;
@@ -46,6 +47,29 @@
   }
 }
 
+.places__control-checkmark {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border-radius: 4px;
+  background: #F2F2F2;
+  margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
+.places__control-input[type="checkbox"]:checked + .places__control-checkmark {
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: 12px 15px;
+  content: "";
+}
 
 .places__list {
 
