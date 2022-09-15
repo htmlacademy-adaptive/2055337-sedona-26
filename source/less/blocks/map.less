@@ -1,0 +1,35 @@
+.map__arizon {
+  margin: 0;
+  position: relative;
+  border: none;
+  height: 350px;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}
+
+.map__container {
+  background-color: #ffffff;
+  padding-top: 49px;
+  background-image: url("../img/map-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/map-tablet.jpg");
+    width: 768px;
+    padding-top: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/map-desktop.jpg");
+    width: 1200px;
+    padding-top: 66px;
+  }
+}

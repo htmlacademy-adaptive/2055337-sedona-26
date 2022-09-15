@@ -13,29 +13,24 @@
           <a class="header__logo" href="index.html">
             <img class="header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седона">
           </a>
-          <button class="button header__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-            <svg class="header__icon" width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
-              <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
-              <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
-            </svg>
-          </button>
         </div>
-        <nav class="nav">
+        <nav class="nav nav--opened nav--nojs">
           <div class="nav__wrapper">
+            <button class="nav__toggle button" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
             <ul class="nav__list site-list clear-list">
               <li class="site-list__item">
                 <a class="site-list__link" href="index.html">
                   Главная
                 </a>
               </li>
-              <li class="site-list__item ">
-                <a class="site-list__link" href="catalog.html">
+              <li class="site-list__item">
+                <a class="site-list__link " href="catalog.html">
                   Фото и видео
                 </a>
               </li>
-              <li class="site-list__item ">
+              <li class="site-list__item">
                 <a class="site-list__link site-list__link--current" href="#">
                   Форма Отзыва
                 </a>
@@ -152,7 +147,13 @@
                   <ul class="impression__list clear-list">
                     <li class="impression__item">
                       <label class="impression__control" for="type-one">
-                        <input class="impression__control-input visually-hidden" type="radio" name="impression" id="type-one" value="positive" checked>
+                        <input class="impression__control-input visually-hidden"
+                          type="radio"
+                          name="impression"
+                          id="type-one"
+                          value="positive"
+                          checked
+                        >
                         <span class="impression__control-mark"></span>
                         <span class="impression__control-label">Скорее положительное</span>
                       </label>
@@ -272,16 +273,31 @@
         </section>
         <div class="footer__copyright copyright">
           <div class="copyright__wrapper">
-            <p class="copyright__text">Разработано</p>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <span class="visually-hidden">HTML Academy</span>
-              <svg class="copyright__icon" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+              <p class="copyright__text">Разработано</p>
+              <svg class="copyright__icon" width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
               </svg>
             </a>
           </div>
         </div>
       </div>
     </footer>
+    <div class="modal-error modal-error--closed">
+      <div class="modal-error__container">
+        <h2 class="modal-error__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+        <p class="modal-error__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal-error__button button">ок</button>
+      </div>
+    </div>
+    <div class="modal-feedback modal-feedback--closed">
+      <div class="modal-feedback__container">
+        <h2 class="modal-feedback__title">Ваш отзыв отправлен!</h2>
+        <p class="modal-feedback__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="modal-feedback__wrapper">
+          <button class="button modal-feedback__button">ЗАкРЫТЬ ОКНО</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
