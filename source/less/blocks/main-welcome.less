@@ -1,19 +1,23 @@
 .main-welcome {
-  background-image: url("../img/diliver.svg"), url("../img/background-welcome-main-desktop.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: bottom, top;
+  background-image: url("../img/background-welcome-main-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
   background-color: #000000;
-  width: 320px;
-  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    background-image: url("../img/diliver-desktop.svg"), url("../img/background-welcome-main-desktop.jpg");
     width: 768px;
+    height: 512px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1200px;
   }
+}
+
+.main-welcome__container {
+  background-image:  url("../img/dilider.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .main-welcome__img {
