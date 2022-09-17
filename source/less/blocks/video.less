@@ -15,6 +15,14 @@
 
 .video__container {
   background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+   padding-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 80px;
+  }
 }
 
 .video__confirmation {
@@ -36,6 +44,7 @@
 
 .video__wrapper {
   background-image: url("../img/video-mobile.jpg");
+  background-color: #000000;
   background-repeat: no-repeat;
   background-position: bottom;
 
