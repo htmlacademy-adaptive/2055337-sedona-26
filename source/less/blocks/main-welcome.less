@@ -7,6 +7,11 @@
   @media (min-width: @tablet-width) {
     width: 768px;
     height: 512px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-welcome-main-desktop@2x.jpg");
+      background-size: 1338px auto;
+    }
   }
 
   @media (min-width: @desktop-width) {
