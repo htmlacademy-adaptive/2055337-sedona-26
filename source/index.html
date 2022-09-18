@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Academy: Седона</title>
+    <title>Главная</title>
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="icon" sizes="32x32" href="favicon32.ico">
   </head>
   <body class="page__body">
     <header class="header">
@@ -21,22 +22,22 @@
             </button>
             <ul class="nav__list site-list clear-list">
               <li class="site-list__item">
-                <a class="site-list__link site-list__link--current" href="#">
+                <a class="site-list__link site-list__link--index site-list__link--current" href="#">
                   Главная
                 </a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="catalog.html">
+                <a class="site-list__link site-list__link--catalog" href="catalog.html">
                   Фото и видео
                 </a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="form.html">
+                <a class="site-list__link site-list__link--form" href="form.html">
                   Форма Отзыва
                 </a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="#">
+                <a class="site-list__link site-list__link--academy" href="#">
                   HTML Academy
                 </a>
               </li>
@@ -65,13 +66,13 @@
                     <h3 class="advantages__title-blue-decoration">Настоящий городок</h3>
                     <p class="advantages__number-blue">— №1 —</p>
                     <p class="advantages__description-blue-decoration">
-                      СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
+                      седона не аттракцион для туристов, там течет своя жизнь
                     </p>
                   </div>
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/advantages-town-desktop.jpg">
-                  <source media="(min-width: 768px)" srcset="img/advantages-town-tablet.jpg">
-                    <img class="advantages__img" src="img/advantages-town.jpg" alt="Фото городка Седона">
+                    <source media="(min-width: 1200px)" srcset="img/advantages-town-desktop.jpg, img/advantages-town-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/advantages-town-tablet.jpg, img/advantages-town-tablet@2x.jpg 2x">
+                    <img class="advantages__img" src="img/advantages-town.jpg" srcset="img/advantages-town@2x.jpg 2x" alt="Фото городка Седона">
                   </picture>
                 </div>
                 <section class="sublist">
@@ -140,9 +141,9 @@
                   </p>
                 </div>
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/advantages-bridge-desktop.jpg">
-                  <source media="(min-width: 768px)" srcset="img/advantages-bridge-tablet.jpg">
-                  <img class="advantages__img" src="img/advantages-bridge.jpg" alt="Мост Дьявола">
+                  <source media="(min-width: 1200px)" srcset="img/advantages-bridge-desktop.jpg, img/advantages-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/advantages-bridge-tablet.jpg, img/advantages-bridge-tablet@2x.jpg 2x">
+                  <img class="advantages__img" src="img/advantages-bridge.jpg" srcset="img/advantages-bridge@2x.jpg 2x" alt="Мост Дьявола">
                 </picture>
               </div>
             </li>
@@ -197,7 +198,7 @@
               src=""
               allowfullscreen
               title="Карта Аризоны"
-              >
+            >
             </iframe>
           </div>
         </section>
