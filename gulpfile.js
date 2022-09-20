@@ -10,7 +10,7 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
-//import dell from 'del';
+import del from 'del';
 import browser from 'browser-sync';
 
 // styles
@@ -92,9 +92,9 @@ export const copy = (done) => {
 
 //clean
 
-//export const clean = () => {
-//  return del('build');
-//};
+export const clean = () => {
+  return del('build');
+};
 
 // server
 
@@ -118,9 +118,9 @@ const watcher = () => {
 }
 
 export const build = gulp.series(
-  optimizeImages, copyImages, copy, sprite, svg, createWebp, //clean,
+  clean, html, optimizeImages, copyImages, copy, sprite, svg, createWebp,
 );
 
 export default gulp.series(
-  html, styles, server, watcher, optimizeImages, copyImages, copy, sprite, svg, createWebp, //clean,
+  html, styles, server, watcher, optimizeImages, copyImages, copy, sprite, svg, createWebp, clean,
 );
