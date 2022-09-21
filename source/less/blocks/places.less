@@ -15,7 +15,8 @@
 }
 
 .places__title {
-  margin: 0;
+  position: relative;
+  margin: auto;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -29,6 +30,30 @@
     font-size: 21px;
     padding-bottom: 28px;
     width: 308px;
+  }
+}
+
+.places__title::before {
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 350px;
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+}
+
+.places__title::after {
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    top: 60%;
+    right: 350px;
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
   }
 }
 
