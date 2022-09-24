@@ -24,6 +24,9 @@
       <symbol viewBox="0 0 23 21" id="icon-liked">
         <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
       </symbol>
+      <symbol viewBox="0 0 48 55" id="icon-view">
+        <path d="M48 27.0193L0 54.0193L2.42273e-06 0.0192871L48 27.0193Z" fill="white" fill-opacity="0.7"/>
+      </symbol>
     </svg>
     <header class="header">
       <div class="container header__container">
@@ -32,7 +35,7 @@
             <img class="header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седона">
           </a>
         </div>
-        <nav class="nav nav--opened nav--nojs">
+        <nav class="nav nav--closed nav--nojs">
           <div class="nav__wrapper">
             <button class="nav__toggle button" type="button">
               <span class="visually-hidden">Открыть меню</span>
@@ -93,7 +96,7 @@
                       <h3 class="fotos__title">неродные просторы</h3>
                       <p class="fotos__author">Автор фото: Борис</p>
                     </div>
-                    <div class="liked-wrapper">
+                    <div class="liked">
                       <button class="fotos__button" type="button">
                         <span class="fotos__liked visually-hidden">понравилось:</span>
                         <svg class="fotos__icon" width="23" height="21">
@@ -117,7 +120,7 @@
                       <h3 class="fotos__title">Местная растительность</h3>
                       <p class="fotos__author">Автор фото: Сергей</p>
                     </div>
-                    <div class="liked-wrapper">
+                    <div class="liked">
                       <button class="fotos__button" type="button">
                         <span class="fotos__liked visually-hidden">понравилось:</span>
                         <svg class="fotos__icon" width="23" height="21">
@@ -141,7 +144,7 @@
                       <h3 class="fotos__title">Дорога на север</h3>
                       <p class="fotos__author">Автор фото: Петр</p>
                     </div>
-                    <div class="liked-wrapper">
+                    <div class="liked">
                       <button class="fotos__button" type="button">
                         <span class="fotos__liked visually-hidden">понравилось:</span>
                         <svg class="fotos__icon" width="23" height="21">
@@ -165,7 +168,7 @@
                       <h3 class="fotos__title">Мост дьявола</h3>
                       <p class="fotos__author">Автор фото: Антон</p>
                     </div>
-                    <div class="liked-wrapper">
+                    <div class="liked">
                       <button class="fotos__button" type="button">
                         <span class="fotos__liked visually-hidden">понравилось:</span>
                         <svg class="fotos__icon" width="23" height="21">
@@ -185,9 +188,14 @@
               <h2 class="video__title">Все еще сомневаетесь?</h2>
               <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
               <div class="video__wrapper">
+                <button class="video__button">
+                  <svg width="48" height="55">
+                    <use xlink:href="#icon-view"></use>
+                  </svg>
+                </button>
                 <iframe
                   class="video__confirmation"
-                  src=""
+                  src="none"
                   allowfullscreen
                   title="видио о достопримечательностях"
                 >
@@ -241,6 +249,7 @@
           <div class="copyright__wrapper">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <p class="copyright__text">Разработано</p>
+              <span class="visually-hidden">HTML Academy</span>
               <svg class="copyright__icon" width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="#icon-copyright"></use>
               </svg>

@@ -35,7 +35,7 @@
             <img class="header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седона">
           </a>
         </div>
-        <nav class="nav nav--opened nav--nojs">
+        <nav class="nav nav--closed nav--nojs">
           <div class="nav__wrapper">
             <button class="nav__toggle button" type="button">
               <span class="visually-hidden">Открыть меню</span>
@@ -85,7 +85,7 @@
           <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="feedback__entry-wrapper">
               <div class="feedback__registry registry">
-                <div class="registry-wrapper">
+                <div class="registry__wrapper">
                   <h2 class="registry__title">Представьтесь:</h2>
                   <fieldset class="registry__fieldset">
                     <p class="registry__field">
@@ -122,11 +122,11 @@
                 </div>
               </div>
               <div class="feedback__contack contack">
-                <div class="contack-wrapper">
+                <div class="contack__wrapper">
                   <h2 class="contack__title">Контактная информация:</h2>
                   <fieldset class="contack__fieldset">
                     <label class="contack__label" for="contack__telephone">Контактный телефон*:</label>
-                    <div class="telephone-wrapper">
+                    <div class="telephone">
                       <input
                         class="contack__input"
                         placeholder="Введите телефон"
@@ -142,7 +142,7 @@
                       </button>
                     </div>
                     <label class="contack__label" for="contack__email">Электронная почта*:</label>
-                    <div class="email-wrapper">
+                    <div class="email">
                       <input
                         class="contack__input"
                         placeholder="Введите e-mail"
@@ -296,6 +296,7 @@
           <div class="copyright__wrapper">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <p class="copyright__text">Разработано</p>
+              <span class="visually-hidden">HTML Academy</span>
               <svg class="copyright__icon" width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="#icon-copyright"></use>
               </svg>
