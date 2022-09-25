@@ -41,7 +41,27 @@
   }
 }
 
+.video__button {
+  cursor: pointer;
+  position: absolute;
+  top: 63px;
+  left: 124px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+
+  @media (min-width: @tablet-width) {
+    top: 223px;
+    left: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 223px;
+    left: 376px;
+  }
+}
+
 .video__wrapper {
+  position: relative;
   background-image: url("../img/video-mobile.jpg");
   width: 280px;
   height: 177px;

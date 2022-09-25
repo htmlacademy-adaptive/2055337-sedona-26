@@ -53,7 +53,7 @@
             <img class="header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седона">
           </a>
         </div>
-        <nav class="nav nav--opened nav--nojs">
+        <nav class="nav nav--closed nav--nojs">
           <div class="nav__wrapper">
             <button class="nav__toggle button" type="button">
               <span class="visually-hidden">Открыть меню</span>
@@ -107,7 +107,7 @@
                       седона не аттракцион для туристов, там течет своя жизнь
                     </p>
                   </div>
-                  <picture>
+                  <picture class="advantages__picture">
                     <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantages-town-desktop.jpg, img/advantages-town-desktop@2x.jpg 2x">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/advantages-town-tablet.jpg, img/advantages-town-tablet@2x.jpg 2x">
                     <source type="image/webp" srcset="img/advantages-town.jpg, img/advantages-town@2x.jpg 2x">
@@ -166,7 +166,7 @@
                     Да, по нему можно пройти! Если вы осмелитесь, конечно
                   </p>
                 </div>
-                <picture>
+                <picture class="advantages__picture">
                   <source media="(min-width: 1200px)" srcset="img/advantages-bridge-desktop.jpg, img/advantages-bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/advantages-bridge-tablet.jpg, img/advantages-bridge-tablet@2x.jpg 2x">
                   <img class="advantages__img" src="img/advantages-bridge.jpg" srcset="img/advantages-bridge@2x.jpg 2x" alt="Мост Дьявола">
@@ -208,7 +208,7 @@
         </div>
         </section>
         <section class="search">
-          <div class="container search-container">
+          <div class="container search__container">
             <h2 class="search__title">Заинтересовались?</h2>
               <p class="search__description">
                 Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
@@ -221,7 +221,7 @@
             <h2 class="visually-hidden">Карта расположения каньона Седона</h2>
             <iframe
               class="map__arizon"
-              src=""
+              src="none"
               allowfullscreen
               title="Карта Аризоны"
             >
@@ -273,6 +273,7 @@
           <div class="copyright__wrapper">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <p class="copyright__text">Разработано</p>
+              <span class="visually-hidden">HTML Academy</span>
               <svg class="copyright__icon" width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="#icon-copyright"></use>
               </svg>
