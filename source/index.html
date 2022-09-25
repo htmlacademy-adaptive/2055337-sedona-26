@@ -137,7 +137,7 @@
                           </svg>
                           <h4 class="sublist__title">Еда</h4>
                           <p class="sublist__description">
-                            Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+                            Всегда заказывайте<br class="sublist__tablet-br"> фирменный бургер,<br class="sublist__tablet-br"> вы не разочаруетесь!
                           </p>
                         </div>
                       </li>
@@ -148,7 +148,7 @@
                           </svg>
                           <h4 class="sublist__title">Сувениры</h4>
                           <p class="sublist__description">
-                            Не только китайского, но и местного производства!
+                            Не только китайского,<br class="sublist__desktop-br"> но и местного производства!
                           </p>
                         </div>
                       </li>
@@ -163,10 +163,13 @@
                   <h3 class="advantages__title-blue">Там есть мост дьявола</h3>
                   <p class="advantages__number-blue">— №2 —</p>
                   <p class="advantages__description-blue">
-                    Да, по нему можно пройти! Если вы осмелитесь, конечно
+                    Да, по нему можно пройти!<br class="advantages__br"> Если вы осмелитесь, конечно
                   </p>
                 </div>
                 <picture class="advantages__picture">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantages-bridge-desktop.jpg, img/advantages-bridge-desktop@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/advantages-bridge-tablet.jpg, img/advantages-bridge-tablet@2x.jpg 2x">
+                  <source type="image/webp" srcset="img/advantages-bridge.jpg, img/advantages-bridge@2x.jpg 2x">
                   <source media="(min-width: 1200px)" srcset="img/advantages-bridge-desktop.jpg, img/advantages-bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/advantages-bridge-tablet.jpg, img/advantages-bridge-tablet@2x.jpg 2x">
                   <img class="advantages__img" src="img/advantages-bridge.jpg" srcset="img/advantages-bridge@2x.jpg 2x" alt="Мост Дьявола">
@@ -211,7 +214,7 @@
           <div class="container search__container">
             <h2 class="search__title">Заинтересовались?</h2>
               <p class="search__description">
-                Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+                Укажите предполагаемые даты поездки,<br class="search__br"> и мы покажем вам лучшие предложения гостиниц в седоне
               </p>
             <a class="button search__button" href="#">Найти Гостиницу</a>
           </div>
@@ -221,7 +224,7 @@
             <h2 class="visually-hidden">Карта расположения каньона Седона</h2>
             <iframe
               class="map__arizon"
-              src="none"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1116580.7885746763!2d-111.58046490210417!3d35.01819918196342!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1664122667231!5m2!1sru!2sru"
               allowfullscreen
               title="Карта Аризоны"
             >
@@ -245,7 +248,7 @@
               <li class="social__item">
                 <a class="social__link button" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">ВКонтакте</span>
-                  <svg class="social__icon-vk" width="24" height="14">
+                  <svg class="social__icon social__icon--vk" width="24" height="14">
                     <use xlink:href="#icon-vk"></use>
                   </svg>
                 </a>
@@ -253,7 +256,7 @@
               <li class="social__item">
                 <a class="social__link button" href="https://t.me/htmlacademy">
                   <span class="visually-hidden">Телеграм</span>
-                  <svg class="social__icon-telegram" width="22" height="18">
+                  <svg class="social__icon social__icon--telegram" width="22" height="18">
                     <use xlink:href="#icon-telegram"></use>
                   </svg>
                 </a>
@@ -261,7 +264,7 @@
               <li class="social__item">
                 <a class="social__link button" href="https://www.youtube.com/user/htmlacademyru">
                   <span class="visually-hidden">Ютуб</span>
-                  <svg class="social__icon-youtube" width="20" height="14">
+                  <svg class="social__icon social__icon--youtube" width="20" height="14">
                     <use xlink:href="#icon-youtube"></use>
                   </svg>
                 </a>

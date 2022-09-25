@@ -63,6 +63,26 @@
   }
 }
 
+.sublist__desktop-br {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.sublist__tablet-br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
 .sublist__souvenir {
   width: 202px;
 
@@ -72,7 +92,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 200px;
+    width: 240px;
   }
 }
 

@@ -10,8 +10,44 @@
   cursor: pointer;
 
   @media (min-width: @tablet-width) {
-    width: 224px;
     margin-left: 0;
+  }
+}
+
+.places__item {
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 224px;
+    margin-right: 32px;
+
+    @media (min-width: @desktop-width) {
+      margin-right: 62px;
+    }
+  }
+}
+
+.places__item--bridge {
+  @media (min-width: @desktop-width) {
+    width: 173px;
+  }
+}
+
+.places__item--mountain {
+  @media (min-width: @desktop-width) {
+    width: 170px;
+  }
+}
+
+.places__item--park {
+  @media (min-width: @desktop-width) {
+    width: 153px;
+  }
+}
+
+.places__item--rocks {
+  @media (min-width: @desktop-width) {
+    width: 184px;
   }
 }
 
@@ -27,10 +63,15 @@
   padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 48px;
+    padding-top: 33px;
     font-size: 21px;
     padding-bottom: 28px;
     width: 308px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 57px;
+    padding-bottom: 59px;
   }
 }
 
@@ -67,9 +108,11 @@
 .places-container {
   border-bottom: solid 1px;
   border-color: rgba(229, 229, 229, 1);
+  padding-bottom: 8px;
 
   @media (min-width: @tablet-width) {
     border: none;
+    padding: 0;
   }
 }
 
@@ -110,12 +153,13 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    width: 480px;
+    width: 530px;
     margin: auto;
-    justify-content: space-between;
+    margin-left: 144px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 960px;
+    margin-left: 164px;
+    width: 1000px;
   }
 }

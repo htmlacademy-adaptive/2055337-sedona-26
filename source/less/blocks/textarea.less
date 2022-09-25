@@ -12,22 +12,25 @@
   padding-top: 16px;
   padding-right: 16px;
   border: 0;
-  margin-bottom: 56px;
+  margin-bottom: 52px;
+  resize: none;
 
   @media (min-width: @tablet-width) {
     width: 648px;
     margin-left: 60px;
     height: 160px;
-    margin-bottom: 48px;
+    margin-bottom: 46px;
   }
 
   @media (min-width: @desktop-width) {
     width: 768px;
+    margin-bottom: 42px;
     margin-left: 216px;
   }
 }
 
 .textarea__title {
+  position: relative;
   margin: 0;
   font-weight: 700;
   font-size: 18px;
@@ -39,7 +42,35 @@
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
-    padding-top: 42px;
+    padding-top: 25px;
     padding-bottom: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 72px;
+  }
+}
+
+.textarea__title::before {
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    top: 65%;
+    left: 120px;
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+}
+
+.textarea__title::after {
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    top: 65%;
+    right: 120px;
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
   }
 }

@@ -22,7 +22,7 @@
         <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
       </symbol>
       <symbol viewBox="0 0 23 21" id="icon-liked">
-        <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+        <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
       </symbol>
       <symbol viewBox="0 0 48 55" id="icon-view">
         <path d="M48 27.0193L0 54.0193L2.42273e-06 0.0192871L48 27.0193Z" fill="white" fill-opacity="0.7"/>
@@ -78,7 +78,7 @@
         <div class="container content-catalog__container">
           <div class="content-catalog__wrapper">
             <h2 class="content-catalog__title">Фото и видео</h2>
-            <p class="content-catalog__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+            <p class="content-catalog__description">Не можете решиться на путешествие из-за курса?<br class="content-catalog__tablet-br"> Фотографии помогут вам забыть о политике и экономике.</p>
           </div>
         </div>
         <div class="content-catalog__fotos fotos">
@@ -86,9 +86,12 @@
             <ul class="fotos__list clear-list">
               <li class="fotos__item">
                 <div class="fotos__wrapper-long">
-                  <picture>
+                  <picture class="fotos__picture-long">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/expanse-desktop.jpg, img/expanse-desktop@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/expanse-tablet.jpg, img/expanse-tablet@2x.jpg 2x">
+                    <source type="image/webp" srcset="img/advantages-bridge.jpg, img/advantages-bridge@2x.jpg 2x">
                     <source media="(min-width: 1200px)" srcset="img/expanse-desktop.jpg, img/expanse-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/expanse-tablet.jpg, img/expanse-tablet@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/expanse-mobile.jpg, img/expanse-mobile@2x.jpg 2x">
                     <img class="fotos__img-long" src="img/expanse-mobile.jpg" srcset="img/expanse-mobile@2x.jpg 2x" alt="фото дороги">
                   </picture>
                   <div class="fotos__description-wrapper-long">
@@ -110,7 +113,10 @@
               </li>
               <li class="fotos__item">
                 <div class="fotos__wrapper">
-                  <picture>
+                  <picture class="fotos__picture">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/vegetation-desktop.jpg, img/vegetation-desktop@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/vegetation-tablet.jpg, img/vegetation-tablet@2x.jpg 2x">
+                    <source type="image/webp" srcset="img/advantages-bridge.jpg, img/advantages-bridge@2x.jpg 2x">
                     <source media="(min-width: 1200px)" srcset="img/vegetation-desktop.jpg, img/vegetation-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/vegetation-tablet.jpg, img/vegetation-tablet@2x.jpg 2x">
                     <img class="fotos__img" src="img/vegetation-mobile.jpg" srcset="img/vegetation-mobile@2x.jpg 2x" alt="фото растения">
@@ -134,9 +140,12 @@
               </li>
               <li class="fotos__item">
                 <div class="fotos__wrapper">
-                  <picture>
+                  <picture class="fotos__picture">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/road-desktop.jpg, img/road-desktop@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/road-tablet.jpg, img/road-tablet@2x.jpg 2x">
+                    <source type="image/webp" srcset="img/advantages-bridge.jpg, img/advantages-bridge@2x.jpg 2x">
                     <source media="(min-width: 1200px)" srcset="img/road-desktop.jpg, img/road-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/road-tablet.jpg, img/road-tablet@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/road-mobile.jpg, img/road-mobile@2x.jpg 2x">
                     <img class="fotos__img" src="img/road-mobile.jpg" srcset="img/road-mobile@2x.jpg 2x" alt="фото горы">
                   </picture>
                   <div class="fotos__description-wrapper">
@@ -158,7 +167,10 @@
               </li>
               <li class="fotos__item">
                 <div class="fotos__wrapper">
-                  <picture>
+                  <picture class="fotos__picture">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/bridge-desktop.jpg, img/bridge-desktop@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/bridge-tablet.jpg, img/bridge-tablet@2x.jpg 2x">
+                    <source type="image/webp" srcset="img/bridge-mobile.jpg, img/bridge-mobile@2x.jpg 2x">
                     <source media="(min-width: 1200px)" srcset="img/bridge-desktop.jpg, img/bridge-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/bridge-tablet.jpg, img/bridge-tablet@2x.jpg 2x">
                     <img class="fotos__img" src="img/bridge-mobile.jpg" srcset="img/bridge-mobile@2x.jpg 2x" alt="фото каньона">
