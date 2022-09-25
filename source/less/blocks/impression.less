@@ -18,7 +18,7 @@
   @media (min-width: @desktop-width) {
     content: "";
     position: absolute;
-    top: 60%;
+    top: 52%;
     left: 330px;
     width: 280px;
     height: 1px;
@@ -30,7 +30,7 @@
   @media (min-width: @desktop-width) {
     content: "";
     position: absolute;
-    top: 60%;
+    top: 52%;
     right: 330px;
     width: 280px;
     height: 1px;
@@ -50,9 +50,14 @@
   padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 48px;
+    padding-top: 47px;
     font-size: 21px;
     padding-bottom: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 45px;
+    padding-top: 56px;
   }
 }
 
@@ -65,9 +70,23 @@
 .impression__container {
   border-bottom: solid 1px;
   border-color: rgba(229, 229, 229, 1);
+  padding-bottom: 8px;
 
   @media (min-width: @tablet-width) {
     border: none;
+    padding: 0;
+  }
+}
+
+.impression__item {
+  @media (min-width: @tablet-width) {
+    width: 280px;
+    margin-right: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 280px;
+    margin-right: 28px;
   }
 }
 
@@ -96,7 +115,6 @@
   height: 16px;
   background: #333333;
   border-radius: 50%;
-  //box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   content: "";
 }
 
@@ -113,12 +131,13 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    width: 576px;
+    width: 619px;
     margin: auto;
-    justify-content: space-between;
+    margin-left: 95px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 960px;
+    width: 924px;
+    margin-left: 172px;
   }
 }

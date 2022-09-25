@@ -17,6 +17,7 @@
   padding-left: 16px;
   font-size: 18px;
   font-weight: 700;
+  font-family: inherit;
 
   @media (min-width: @desktop-width) {
     width: 430px;
@@ -27,7 +28,7 @@
   background: #e5e5e5;
 }
 
-.registry__input:active {
+.registry__input:focus {
   background: #ffffff;
   border: 4px solid #e5e5e5;
 }
@@ -82,6 +83,11 @@
     padding-top: 0;
     padding-bottom: 28px;
     font-size: 21px;
+    padding-left: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 79px;
   }
 }
 

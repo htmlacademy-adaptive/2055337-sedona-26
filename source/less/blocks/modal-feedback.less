@@ -26,10 +26,18 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: 444px;
+    font-size: 30px;
+    line-height: 40px;
+    margin-left: 97px;
+    margin-right: 99px;
+  }
 }
 
 .modal-feedback__description {
-  padding-top: 14px;
+  padding-top: 20px;
   margin: auto;
   text-align: center;
   text-transform: uppercase;
@@ -37,20 +45,37 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  padding-bottom: 30px;
+  padding-bottom: 55px;
+
+  @media (min-width: @tablet-width) {
+    width: 422px;
+    padding-top: 24px;
+    padding-bottom: 45px;
+  }
 }
 
 .modal-feedback__button {
   display: block;
   width: 280px;
+  font-size: 18px;
+  line-height: 26px;
   padding-top: 18px;
   padding-bottom: 14px;
   margin: auto;
+  font-family: inherit;
+
+  @media (min-width: @tablet-width) {
+    width: 448px;
+  }
 }
 
 .modal-feedback__wrapper {
   background: #f2f2f2;
   padding: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 44px;
+  }
 }
 
 .modal-feedback--closed {

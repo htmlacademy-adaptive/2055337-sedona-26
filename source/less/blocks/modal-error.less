@@ -32,6 +32,21 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin: auto;
+    width: 307px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.modal-error__br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .modal-error__description {
@@ -44,6 +59,12 @@
   font-size: 14px;
   line-height: 21px;
   padding-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    width: 307px;
+    padding-bottom: 45px;
+    padding-top: 24px;
+  }
 }
 
 .modal-error__button {
@@ -51,7 +72,14 @@
   width: 180px;
   padding-top: 18px;
   padding-bottom: 14px;
+  font-size: 18px;
+  line-height: 26px;
   margin: auto;
+  font-family: inherit;
+
+  @media (min-width: @tablet-width) {
+    width: 272px;
+  }
 }
 
 .modal-error--closed {

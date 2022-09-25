@@ -4,11 +4,16 @@
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
-  padding-bottom: 17px;
+  padding-bottom: 25px;
 
   @media (min-width: @tablet-width) {
+    padding-top: 66px;
     font-size: 30px;
-    padding-bottom: 27px;
+    padding-bottom: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 100px;
   }
 }
 
@@ -16,9 +21,17 @@
   background-color: #ffffff;
 }
 
+.content-catalog__tablet-br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
 .content-catalog__description {
   margin: auto;
-  padding-bottom: 24px;
+  padding-bottom: 38px;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -30,7 +43,11 @@
   @media (min-width: @tablet-width) {
     width: 458px;
     margin: auto;
-    padding-bottom: 67px;
+    padding-bottom: 81px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 88px;
   }
 }
 
