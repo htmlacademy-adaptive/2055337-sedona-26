@@ -35,7 +35,7 @@
             <img class="header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седона">
           </a>
         </div>
-        <nav class="nav nav--closed nav--nojs">
+        <nav class="nav nav--opened nav--nojs ">
           <div class="nav__wrapper">
             <button class="nav__toggle button" type="button">
               <span class="visually-hidden">Открыть меню</span>
@@ -152,7 +152,7 @@
                         required
                       >
                       <button class="contack__button">
-                        <svg class="contack__icon" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="contack__icon" width="16" height="12">
                           <use xlink:href="#icon-email"></use>
                         </svg>
                       </button>
@@ -166,7 +166,7 @@
                 <fieldset class="impression__fieldset">
                   <legend class="impression__title">Ваше общее впечатление:</legend>
                   <ul class="impression__list clear-list">
-                    <li class="impression__item">
+                    <li tabindex="0" class="impression__item">
                       <label class="impression__control" for="type-one">
                         <input class="impression__control-input visually-hidden"
                           type="radio"
@@ -179,14 +179,14 @@
                         <span class="impression__control-label">Скорее положительное</span>
                       </label>
                     </li>
-                    <li class="impression__item">
+                    <li tabindex="0" class="impression__item">
                       <label class="impression__control" for="type-two">
                         <input class="impression__control-input visually-hidden" type="radio" name="impression" id="type-two" value="negative">
                         <span class="impression__control-mark"></span>
                         <span class="impression__control-label">Скорее отрицательное</span>
                       </label>
                     </li>
-                    <li class="impression__item">
+                    <li tabindex="0" class="impression__item">
                       <label class="control" for="type-three">
                         <input class="impression__control-input visually-hidden" type="radio" name="impression" id="type-three" value="difficult">
                         <span class="impression__control-mark"></span>
@@ -202,28 +202,28 @@
                 <fieldset class="places__fieldset">
                   <legend class="places__title">Посещенные достопримечательности:</legend>
                   <ul class="places__list clear-list">
-                    <li class="places__item places__item--bridge">
+                    <li tabindex="0" class="places__item places__item--bridge">
                       <label class="places__control">
                         <input class="places__control-input visually-hidden" type="checkbox" name="places" value="bridge" checked>
                         <span class="places__control-checkmark"></span>
                         <span class="places__control-label">Мост Дьявола</span>
                       </label>
                     </li>
-                    <li class="places__item places__item--mountain">
+                    <li tabindex="0" class="places__item places__item--mountain">
                       <label class="places__control">
                         <input class="places__control-input visually-hidden" type="checkbox" name="places" value="mountain" checked>
                         <span class="places__control-checkmark"></span>
                         <span class="places__control-label">Гора-Колокол</span>
                       </label>
                     </li>
-                    <li class="places__item places__item--park">
+                    <li tabindex="0" class="places__item places__item--park">
                       <label class="places__control">
                         <input class="places__control-input visually-hidden" type="checkbox" name="places" value="park" checked>
                         <span class="places__control-checkmark"></span>
                         <span class="places__control-label">Слайд-парк</span>
                       </label>
                     </li>
-                    <li class="places__item places__item--rocks">
+                    <li tabindex="0" class="places__item places__item--rocks">
                       <label class="places__control">
                         <input class="places__control-input visually-hidden" type="checkbox" name="places" value="rocks">
                         <span class="places__control-checkmark"></span>
@@ -268,7 +268,7 @@
               <li class="social__item">
                 <a class="social__link button" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">ВКонтакте</span>
-                  <svg class="social__icon-vk" width="24" height="14">
+                  <svg class="social__icon social__icon--vk" width="24" height="14">
                     <use xlink:href="#icon-vk"></use>
                   </svg>
                 </a>
@@ -276,7 +276,7 @@
               <li class="social__item">
                 <a class="social__link button" href="https://t.me/htmlacademy">
                   <span class="visually-hidden">Телеграм</span>
-                  <svg class="social__icon-telegram" width="22" height="18">
+                  <svg class="social__icon social__icon--telegram" width="22" height="18">
                     <use xlink:href="#icon-telegram"></use>
                   </svg>
                 </a>
@@ -284,7 +284,7 @@
               <li class="social__item">
                 <a class="social__link button" href="https://www.youtube.com/user/htmlacademyru">
                   <span class="visually-hidden">Ютуб</span>
-                  <svg class="social__icon-youtube" width="20" height="14">
+                  <svg class="social__icon social__icon--youtube" width="20" height="14">
                     <use xlink:href="#icon-youtube"></use>
                   </svg>
                 </a>
@@ -297,7 +297,7 @@
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <p class="copyright__text">Разработано</p>
               <span class="visually-hidden">HTML Academy</span>
-              <svg class="copyright__icon" width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
+              <svg class="copyright__icon" width="27" height="35">
                 <use xlink:href="#icon-copyright"></use>
               </svg>
             </a>
